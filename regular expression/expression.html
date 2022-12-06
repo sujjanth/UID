@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Regular Expression</title>
+    <style>
+        body {
+            background-image: url("bg.png");
+            height: 600px;
+            top: 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(111, 108, 108);
+            padding-left: 550px;
+        }
+
+
+        p {
+            line-height: 1.5em;
+            font-size: 1.2em;
+            color: aliceblue;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: aliceblue;
+        }
+
+        .container {
+
+            min-width: 320px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 40%;
+
+        }
+
+        .block {
+            background-color: #000000d6;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 100px 100px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="font-size: 15px;color:white;position: absolute;">
+        <p style="color: #ffffff;"><br></p>
+    </div>
+    <center><h1 style="color: rgb(255, 255, 255);">Word Finder</h1></center>
+    <center><a href="../Index.html" style="color: #f4f4f4;" >HOME</a></center>
+    
+    <center>
+        
+        <div class="container block">
+            <h3>Amrita Is A Deemed To Be University</h3>
+            <p>Position of Amrita <button onclick="finder()">Click Me </button> </p>
+
+
+            <p id="demo"></p>
+            <h3 id="te">Amrita Is A Deemed To Be University</h3>
+            <p>Replace University with College <button onclick="rep()">replace</button> </p>
+        </div>
+    </center>
+    <script>
+        function finder() {
+            let text = "Amrita Is A Deemed To Be University";
+            let n = text.search(/Amrita/i);
+            document.getElementById("demo").innerHTML = "Amrita : 1" ;
+        }
+
+        function rep() {
+            let text = document.getElementById("te").innerHTML;
+            document.getElementById("te").innerHTML =
+                text.replace(/University/i, "College");
+        }
+    </script>
+
+</body>
+
+</html>

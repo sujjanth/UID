@@ -1,0 +1,145 @@
+<!DOCTYPE hmtl>
+    <head>
+            <style>
+                img
+                {
+                    height: 200px;
+                }
+                body 
+                {
+                    background: linear-gradient(to right, #ffffff 50%, #aaaaaa 100%);
+                }
+
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function sitstand()
+            {
+                if(i==0)
+                {
+                    document.getElementById("switch").src = "dog_stand.jpg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("switch").src = "dogsit.jpg";
+                    i=0;
+                }
+            }
+            function dog()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("pet").src = "doggo.jpg";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("pet").src = "saddoggo.jpg";
+                    j=0;
+                }
+            }
+            function dogrun()
+            {
+                if(d==0)
+                {
+                    document.getElementById("run").src = "dogrunning1.png";
+                    d=1;
+                }
+                else if(d==1)
+                {
+                    document.getElementById("run").src = "dogrunning2.png";
+                    d=2;
+                }
+                else if(d==2)
+                {
+                    document.getElementById("run").src = "dogrunning3.png";
+                    d=3;
+                }
+                else if(d==3)
+                {
+                    document.getElementById("run").src = "dogrunning4.png";
+                    d=4;
+                }
+                else if(d==4)
+                {
+                    document.getElementById("run").src = "dogrunning5.png";
+                    d=5;
+                }
+                else if(d==5)
+                {
+                    document.getElementById("run").src = "dogrunning6.png";
+                    d=6;
+                }
+                else if(d==6)
+                {
+                    document.getElementById("run").src = "dogrunning7.png";
+                    d=7;
+                }
+                else if(d==7)
+                {
+                    document.getElementById("run").src = "dogrunning8.png";
+                    d=1;
+                }
+                }
+                function eatingdog()
+                {
+                    if(h==0)
+                    {
+                    document.getElementById("eat").src="eatingdog1.png";
+                    h=1;
+                    }
+                    else
+                    {
+                        document.getElementById("eat").src="eatingdog2.png";
+                        h=0;
+                    }
+                }
+                function handshake()
+                {
+                    if(s==0)
+                    {
+                    document.getElementById("shake").src="doghs1.png";
+                    s=1;
+                    }
+                    else
+                    {
+                        document.getElementById("shake").src="doghs.png";
+                        s=0;
+                    }
+                }
+        </script>
+        </head>
+    <body>
+        <h1>HTML Pet House</h1>
+        <h3>USE MOUSE EVENTS TO INTERACT WITH PETS</h3>    
+        <a href="../Index.html"  style="color: #000000;" >HOME</a>
+        <table style="width: 1000px;">
+        <tr>
+            <td><h3>Left Click</h3></td>
+            <td><h3>Hover</h3></td>
+        </tr>
+        <tr>
+        <td><img src="dog_stand.jpg"  onclick="sitstand()" id="switch"></td>
+        <td><img src="saddoggo.jpg" onmouseenter="dog()" onmouseleave="dog()" id="pet"></td>
+        </tr>
+        <tr>
+            <td><h3>Double Click</h3></td>
+            <td><h3>Right Click</h3></td>
+        </tr>
+        <tr>
+        <td><img src="doghs.png" height="300px"  ondblclick="handshake()" id="shake"></td>
+        <td><img src="eatingdog2.png" height="300px" contextmenu="eatingdog1" oncontextmenu="eatingdog()" id="eat"></td>
+        </tr>
+        <tr></tr>
+    </table>
+    <h3>Move Mouse</h3>
+    <img src="dogrunning1.png" onmousemove="dogrun()" id="run">
+      </div>
+      </body>
+</html>

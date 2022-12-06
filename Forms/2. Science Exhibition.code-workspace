@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "2. Science Exhibition"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "2. Science Exhibition",
+		"files.associations": {
+			"ostream": "cpp"
+		}
+	}
+}
