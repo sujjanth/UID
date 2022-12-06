@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+.square {
+    background-color: #000000;
+}
+.bgimg{
+    background-image:url(collegebuilding.png);
+    opacity: 85%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}

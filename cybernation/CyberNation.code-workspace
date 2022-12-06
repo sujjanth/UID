@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "rhino-html"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CyberNation"
+	}
+}
